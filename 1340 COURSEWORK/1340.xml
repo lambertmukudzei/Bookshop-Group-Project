@@ -16,7 +16,7 @@
       <Publisher>FoodPress</Publisher>
       <edition>First</edition>
       <date>2020</date>
-      <price>15.99</price>
+      <price>157.99</price>
     </book>
 
     <book>
@@ -30,7 +30,7 @@
       <Publisher>GourmetHouse</Publisher>
       <edition>Second</edition>
       <date>2019</date>
-      <price>22.50</price>
+      <price>272.50</price>
     </book>
 
     <book>
@@ -44,7 +44,7 @@
       <Publisher>SweetBooks</Publisher>
       <edition>First</edition>
       <date>2021</date>
-      <price>18.00</price>
+      <price>188.00</price>
     </book>
 
     <book>
@@ -117,7 +117,7 @@
       <Publisher>EpicReads</Publisher>
       <edition>First</edition>
       <date>2022</date>
-      <price>9608.99</price>
+      <price>908.99</price>
     </book>
 
     <book>
@@ -145,7 +145,7 @@
       <Publisher>EpicReads</Publisher>
       <edition>First</edition>
       <date>1992</date>
-      <price>2298.99</price>
+      <price>298.99</price>
     </book>
   </category>
 
@@ -175,7 +175,7 @@
       <Publisher>RomancePress</Publisher>
       <edition>Second</edition>
       <date>2019</date>
-      <price>1600.50</price>
+      <price>160.50</price>
     </book>
 
     <book>
@@ -189,7 +189,7 @@
       <Publisher>LoveStories Inc.</Publisher>
       <edition>First</edition>
       <date>2020</date>
-      <price>1097.99</price>
+      <price>197.99</price>
     </book>
 
     <book>
@@ -203,7 +203,7 @@
       <Publisher>LoveStories Inc.</Publisher>
       <edition>First</edition>
       <date>2020</date>
-      <price>4597.99</price>
+      <price>457.99</price>
     </book>
 
     <book>
@@ -217,7 +217,7 @@
         <Publisher>RomancePress</Publisher>
         <edition>First</edition>
         <date>2018</date>
-        <price>6097.99</price>
+        <price>697.99</price>
     </book>
  </category>
 
@@ -233,7 +233,7 @@
       <Publisher>DarkHouse</Publisher>
       <edition>First</edition>
       <date>2017</date>
-      <price>2400.00</price>
+      <price>240.00</price>
     </book>
 
     <book>
@@ -247,7 +247,7 @@
       <Publisher>FearPress</Publisher>
       <edition>Second</edition>
       <date>2019</date>
-      <price>2150.75</price>
+      <price>250.75</price>
     </book>
 
     <book>
@@ -275,7 +275,7 @@
         <Publisher>FearPress</Publisher>
         <edition>First</edition>
         <date>1897</date>
-        <price>1500.00</price>
+        <price>150.00</price>
     </book>
 
     <book>
@@ -289,7 +289,7 @@
         <Publisher>NightReads</Publisher>
         <edition>First</edition>
         <date>1986</date>
-        <price>1200.00</price>
+        <price>120.00</price>
     </book>
 
   </category>

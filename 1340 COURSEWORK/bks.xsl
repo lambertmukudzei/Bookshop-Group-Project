@@ -4,7 +4,11 @@
 <xsl:template match="/">
   <html>
     <body>
-      <h2>My Reading Nook</h2>
+      <h2>Page Turner</h2>
+        <a href="index.html">Back to Home</a>
+        <br/><br/>
+
+        <p>Here is a list of our Page Turners that will have you turning pages for days. Feel free to browse and purchase any Page Turners that capture your attention!</p> 
       
       <xsl:for-each select="library/category">
         <h3><xsl:value-of select="@name"/></h3>
@@ -45,8 +49,13 @@
         </table>
         <br/>
       </xsl:for-each>
+       <a href="index.html">Back to Home</a>
+      <br/><br/>
     </body>
   </html>
 </xsl:template>
 
 </xsl:stylesheet>
+
+
+
