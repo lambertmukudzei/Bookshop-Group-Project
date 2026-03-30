@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bks.xsl"?>
+
+
+<library>
+
+  <category name="Cooking">
+    <book>
+      <ISBN>095-56473907</ISBN>
+      <image>saltfatacid.jpg</image>
+      <Title>Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking </Title>
+      <Author>
+        <lastName>Nosrat</lastName>
+        <firstName>Samin</firstName>
+      </Author>
+      <Publisher>FoodPress</Publisher>
+      <edition>First</edition>
+      <date>2020</date>
+      <price>15.99</price>
+    </book>
+
+    <book>
+      <ISBN>987-87046583</ISBN>
+      <image>foodlab.png</image>
+      <Title>The Food Lab: Better Home Cooking Through Science </Title>
+      <Author>
+        <lastName>Lopez</lastName>
+        <firstName>Kenji</firstName>
+      </Author>
+      <Publisher>GourmetHouse</Publisher>
+      <edition>Second</edition>
+      <date>2019</date>
+      <price>22.50</price>
+    </book>
+
+    <book>
+      <ISBN>567-59205638</ISBN>
+      <image>kingarthur.jpg</image>
+      <Title>King Arthur Baking School: Lessons and Recipes for Every Baker </Title>
+      <Author>
+        <lastName>King</lastName>
+        <firstName>Arthur</firstName>
+      </Author>
+      <Publisher>SweetBooks</Publisher>
+      <edition>First</edition>
+      <date>2021</date>
+      <price>18.00</price>
+    </book>
+
+    <book>
+      <ISBN>896-860375794</ISBN>
+      <image>bakingbible.jpg</image>
+      <Title>The Baking Bible </Title>
+      <Author>
+        <lastName>Beranbaum</lastName>
+        <firstName>Rose</firstName>
+      </Author>
+      <Publisher>SweetBooks</Publisher>
+      <edition>First</edition>
+      <date>2021</date>
+      <price>180.00</price>
+    </book>
+
+    <book>
+      <ISBN>509-</ISBN>
+      <image>joycooking.jpg</image>
+      <Title>The Joy of Cooking </Title>
+      <Author>
+        <lastName>Rombauer</lastName>
+        <firstName>Irma</firstName>
+      </Author>
+      <Publisher>CookBooks</Publisher>
+      <edition>Third</edition>
+      <date>2005</date>
+      <price>108.00</price>
+    </book>
+
+  </category>
+
+  <category name="Fantasy">
+    <book>
+      <ISBN>696-40782569</ISBN>
+      <image>acotar.jpg</image>
+      <Title>A Court Of Thorns and Roses</Title>
+      <Author>
+        <lastName>Maas</lastName>
+        <firstName>Sarah</firstName>
+      </Author>
+      <Publisher>MagicHouse</Publisher>
+      <edition>First</edition>
+      <date>2018</date>
+      <price>250.50</price>
+    </book>
+
+    <book>
+      <ISBN>450-306583957</ISBN>
+      <image>kingdomash.jpg</image>
+      <Title>Kingdom of Ash</Title>
+      <Author>
+        <lastName>Maas</lastName>
+        <firstName>Sarah</firstName>
+      </Author>
+      <Publisher>FantasyWorks</Publisher>
+      <edition>Second</edition>
+      <date>2020</date>
+      <price>207.99</price>
+    </book>
+
+    <book>
+      <ISBN>456-95023006</ISBN>
+      <image>fourthwing.jpg</image>
+      <Title>Fourth Wing</Title>
+      <Author>
+        <lastName>Yarros</lastName>
+        <firstName>Rebecca</firstName>
+      </Author>
+      <Publisher>EpicReads</Publisher>
+      <edition>First</edition>
+      <date>2022</date>
+      <price>9608.99</price>
+    </book>
+
+    <book>
+      <ISBN>001-86047691</ISBN>
+      <image>thewitcher.jpg</image>
+      <Title>The Witcher</Title>
+      <Author>
+        <lastName>Sapkowski</lastName>
+        <firstName>Andrzej</firstName>
+      </Author>
+      <Publisher>EpicReads</Publisher>
+      <edition>First</edition>
+      <date>2022</date>
+      <price>698.99</price>
+    </book>
+
+    <book>
+      <ISBN>043-94871323</ISBN>
+      <image>sandman.jpg</image>
+      <Title>The Sandman</Title>
+      <Author>
+        <lastName>Gaiman</lastName>
+        <firstName>Nei</firstName>
+      </Author>
+      <Publisher>EpicReads</Publisher>
+      <edition>First</edition>
+      <date>1992</date>
+      <price>2298.99</price>
+    </book>
+  </category>
+
+  <category name="Romance">
+    <book>
+      <ISBN>333-3333333331</ISBN>
+      <image>hypothesis.jpg</image>
+      <Title>The Love Hypothesis</Title>
+      <Author>
+        <lastName>Hazelwood</lastName>
+        <firstName>Ali</firstName>
+      </Author>
+      <Publisher>HeartBooks</Publisher>
+      <edition>First</edition>
+      <date>2021</date>
+      <price>708.75</price>
+    </book>
+
+    <book>
+      <ISBN>333-3333333332</ISBN>
+      <image>rwrb.jpg</image>
+      <Title>Red White and Royal Blue</Title>
+      <Author>
+        <lastName>McQuinston</lastName>
+        <firstName>Casey</firstName>
+      </Author>
+      <Publisher>RomancePress</Publisher>
+      <edition>Second</edition>
+      <date>2019</date>
+      <price>1600.50</price>
+    </book>
+
+    <book>
+      <ISBN>333-3333333333</ISBN>
+      <image>endsus.jpg</image>
+      <Title>It Ends with Us</Title>
+      <Author>
+        <lastName>Hoover</lastName>
+        <firstName>Colleen</firstName>
+      </Author>
+      <Publisher>LoveStories Inc.</Publisher>
+      <edition>First</edition>
+      <date>2020</date>
+      <price>1097.99</price>
+    </book>
+
+    <book>
+      <ISBN>333-3333333334</ISBN>
+      <image>husbands.jpg</image>
+      <Title>The Seven Husbands of Evelyn Hugo</Title>
+      <Author>
+        <lastName>Reid</lastName>
+        <firstName>Taylor Jenkins</firstName>
+      </Author>
+      <Publisher>LoveStories Inc.</Publisher>
+      <edition>First</edition>
+      <date>2020</date>
+      <price>4597.99</price>
+    </book>
+
+    <book>
+        <ISBN>333-3333333335</ISBN>
+        <image>viscount.jpg</image>
+        <Title>The Viscount Who Loved Me</Title>
+        <Author>
+            <lastName>Quinn</lastName>
+            <firstName>Julia</firstName>
+        </Author>
+        <Publisher>RomancePress</Publisher>
+        <edition>First</edition>
+        <date>2018</date>
+        <price>6097.99</price>
+    </book>
+ </category>
+
+  <category name="Horror">
+    <book>
+      <ISBN>444-4444444441</ISBN>
+      <image>goosebumps.jpg</image>
+      <Title>Goosebumps</Title>
+      <Author>
+        <lastName>Stine</lastName>
+        <firstName>RL</firstName>
+      </Author>
+      <Publisher>DarkHouse</Publisher>
+      <edition>First</edition>
+      <date>2017</date>
+      <price>2400.00</price>
+    </book>
+
+    <book>
+      <ISBN>444-4444444442</ISBN>
+      <image>frankestein.jpg</image>
+      <Title>Frankenstein</Title>
+      <Author>
+        <lastName>Shelley</lastName>
+        <firstName>Mary</firstName>
+      </Author>
+      <Publisher>FearPress</Publisher>
+      <edition>Second</edition>
+      <date>2019</date>
+      <price>2150.75</price>
+    </book>
+
+    <book>
+      <ISBN>444-4444444443</ISBN>
+      <image>exorcist.jpg</image>
+      <Title>The Exorcist</Title>
+      <Author>
+        <lastName>Blatty</lastName>
+        <firstName>William Peter</firstName>
+      </Author>
+      <Publisher>NightReads</Publisher>
+      <edition>First</edition>
+      <date>2021</date>
+      <price>230.50</price>
+    </book>
+
+    <book>
+        <ISBN>444-4444444444</ISBN>
+        <image>dracula.jpg</image>
+        <Title>Dracula</Title>
+        <Author>
+            <lastName>Stoker</lastName>
+            <firstName>Bram</firstName>
+        </Author>
+        <Publisher>FearPress</Publisher>
+        <edition>First</edition>
+        <date>1897</date>
+        <price>1500.00</price>
+    </book>
+
+    <book>
+        <ISBN>444-4444444445</ISBN>
+        <image>it.jpg</image>
+        <Title>It</Title>
+        <Author>
+            <lastName>King</lastName>
+             <firstName>Stephen</firstName>
+        </Author>
+        <Publisher>NightReads</Publisher>
+        <edition>First</edition>
+        <date>1986</date>
+        <price>1200.00</price>
+    </book>
+
+  </category>
+
+  <category name="Children">
+    <book>
+      <ISBN>555-5555555551</ISBN>
+      <image>pinocchio.jpg</image>
+      <Title>Pinocchio</Title>
+      <Author>
+        <lastName>Collodi</lastName>
+        <firstName>Carlo</firstName>
+      </Author>
+      <Publisher>KidsWorld</Publisher>
+      <edition>First</edition>
+      <date>2018</date>
+      <price>125.99</price>
+    </book>
+
+    <book>
+      <ISBN>555-5555555552</ISBN>
+      <image>wild.jpg</image>
+      <Title>Where the Wild Things Are</Title>
+      <Author>
+        <lastName>Sendak</lastName>
+        <firstName>Maurice</firstName>
+      </Author>
+      <Publisher>ChildrenBooks Inc.</Publisher>
+      <edition>Second</edition>
+      <date>2019</date>
+      <price>150.50</price>
+    </book>
+
+    <book>
+      <ISBN>555-5555555553</ISBN>
+      <image>charlotte.jpg</image>
+      <Title>Charlotte's Web</Title>
+      <Author>
+        <lastName>White</lastName>
+        <firstName>E.B.</firstName>
+      </Author>
+      <Publisher>KidsWorld</Publisher>
+      <edition>First</edition>
+      <date>2020</date>
+      <price>200.00</price>
+    </book>
+
+    <book>
+        <ISBN>555-5555555554</ISBN>
+        <image>matilda.jpg</image>
+        <Title>Matilda</Title>
+        <Author>
+            <lastName>Dahl</lastName>
+            <firstName>Roald</firstName>
+        </Author>
+        <Publisher>ChildrenBooks Inc.</Publisher>
+        <edition>First</edition>
+        <date>1988</date>
+        <price>180.00</price>
+    </book>
+
+    <book>
+        <ISBN>555-5555555555</ISBN>
+        <image>caterpilar.jpg</image>
+        <Title>The Very Hungry Caterpillar</Title>
+        <Author>
+            <lastName>Carle</lastName>
+            <firstName>Eric</firstName>
+        </Author>
+        <Publisher>KidsWorld</Publisher>
+        <edition>First</edition>
+        <date>1969</date>
+        <price>1000.00</price>
+    </book>
+
+
+  </category>
+
+</library>
