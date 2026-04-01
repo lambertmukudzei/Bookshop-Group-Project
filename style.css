@@ -1,0 +1,139 @@
+/* ============================================ */
+/* MY ENHANCED CSS FOR OUR PAGETURNER BOOKSHOP         */
+/* CST1340 - Information in Organisations       */
+/* Student: Mukudzei Kunyetu-Lambert            */
+/* Student ID: M01061702                        */
+/* Date: 31 March 2026                             */
+/* ============================================ */
+
+/*-------Table Enhancements--------*/
+/* First I'll implement styling for the special notes column I just added*/
+.hours-table td:last-child {
+    background-color: #fff5e6;
+    font-style: italic;
+    color: #8b5a2b;
+    border-left: 2px solid #c9956a;
+}
+
+/* Table row hover effect meaning it changes color when the mouse hovers over */
+/* This creates an interactive effect when users hover over table rows */
+/* It helps users track which row they're looking at basically it means it improves usability */
+/* !important makes sure this overrides the default row colors that were OG put in place */
+.hours-table tbody tr:hover {
+    background-color: #fff5e8 !important;
+}
+/* I will now implement a back to top button*/
+/* This creates a floating button that helps users quickly return to the top */
+/* position: fixed keeps it in the same spot even when scrolling */
+/* I designed it as a circle with the up arrow symbol */
+/*--------Back to top Button----------*/
+
+
+/* This creates a floating button that helps users quickly return to the top */
+/* position: fixed keeps it in the same spot even when scrolling */
+/* I designed it as a circle with the up arrow symbol */
+#back-to-top {
+    position: fixed;      /* Stays in place while scrolling */
+    bottom: 30px;         /* 30px from bottom of screen */
+    right: 30px;          /* 30px from right edge */
+    background-color: #4a2c0a;  /* Dark brown - matches bookshop header */
+    color: white;         /* White text for contrast */
+    padding: 12px 15px;   /* Creates the circular shape */
+    border-radius: 50%;   /* Makes it a perfect circle */
+    text-decoration: none; /* Removes underline from link */
+    font-weight: bold;     /* Makes the arrow symbol bold */
+    opacity: 0;           /* Starts invisible and then it's hidden until needed */
+    transition: opacity 0.3s ease;  /* Smooth fade-in/fade-out effect */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);  /* Subtle shadow for depth */
+}
+
+/* This class makes the button visible when user has scrolled down */
+/* The JavaScript adds/removes this class based on scroll position */
+#back-to-top.visible {
+    opacity: 1;           /* Fully visible */
+}
+
+/* Changes button color when mouse hovers over it - gives visual feedback */
+#back-to-top:hover {
+    background-color: #c9956a;  /* Lighter brown - indicates it's clickable */
+}
+
+/* Now I will implement a mobile friendly response design 
+/*--------Mobile Friendly Response Design---------*/
+/* This code activates when screen width is 768px or less (tablets and phones) */
+/* Responsive design ensures the website works well on all devices */
+@media (max-width: 768px) {
+    
+    /* Makes the table scroll horizontally on small screens */
+    /* Without this, the table would overflow and break the layout */
+    .hours-table {
+        display: block;      /* Changes display behavior */
+        overflow-x: auto;    /* Adds horizontal scrollbar when needed */
+    }
+    
+    /* Reduces padding in hero section for mobile screens */
+    /* Saves space and prevents text from looking cramped */
+    .hero {
+        padding: 30px 20px;  /* Less padding on sides for mobile */
+    }
+    
+    /* Makes the hero heading smaller on mobile */
+    /* Large headings take up too much space on small screens */
+    .hero h2 {
+        font-size: 1.5em;    /* Smaller than desktop version */
+    }
+    
+    /* Makes genre tags slightly smaller on mobile */
+    /* Allows more tags to fit on one line */
+    .genres-grid li {
+        font-size: 0.85em;    /* Slightly smaller text */
+        padding: 5px 12px;    /* Less padding around each tag */
+    }
+    
+    /* Reduces main content padding on mobile */
+    /* Maximizes available screen space */
+    main {
+        padding: 0 20px;      /* Less padding on sides */
+    }
+}
+/* Okay now I will implement my own print styles that will be used when printing the page*/
+
+/*------------Print Styles----------------*/
+/* This code is activated when users print the webpage for example when they click (Ctrl+P) */
+/* Ensures the printed version looks clean and professional */
+@media print {
+    
+    /* Hides navigation menu, hero banner, footer, and the back to top button */
+    /* These elements are not needed when printing the schedule */
+    nav, .hero, footer, #back-to-top {
+        display: none;        /* Completely removes them from print */
+    }
+    
+    /* Gives the table a solid black border when it's printed */
+    /* Makes it look more professional on paper */
+    .hours-table {
+        border: 2px solid black;  /* Thick black border for visibility */
+    }
+    
+    /* Styles table headers for print */
+    /* Uses light gray background instead of brown which saves ink */
+    .hours-table th {
+        background-color: #ddd;   /* Light gray again it uses less ink */
+        border: 1px solid black;  /* Black borders for clarity */
+    }
+    
+    /* Styles regular table cells for print */
+    .hours-table td {
+        border: 1px solid #ccc;   /* Light gray borders not too striking */
+    }
+}
+
+/*A short recap:
+I styled the Special Notes column I added by giving it a light cream background and italic text to
+make it look like annotations. I also added a hover effect on table rows so users can easily track which row they're looking at. This improves usability and makes the table more interactive.
+I also created a floating back to top button that appears when users scroll down. It's styled as a circle with an up arrow. When clicked, it returns users to the top of the page.
+I used CSS transitions to make it fade in smoothly rather than appearing suddenly.
+I added a media query for screens 768px and smaller. This makes the table scroll horizontally on mobile devices instead of breaking the layout.
+I also reduced font sizes and padding to make better use of the smaller screen space.
+I added print styles so if someone prints the opening hours, the navigation and decorative elements are hidden. The table gets black borders to make it look professional on paper, 
+and I used light gray backgrounds to save printer ink.
