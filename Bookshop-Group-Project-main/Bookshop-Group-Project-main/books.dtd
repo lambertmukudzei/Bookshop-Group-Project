@@ -1,0 +1,77 @@
+000<!-- ============================================ -->
+<!-- DTD FOR PAGETURNER BOOKSHOP         -->
+<!-- CST1340 - Information in Organisations       -->
+<!-- Student: Mukudzei Kunyetu-Lambert            -->
+<!-- Student ID: M01061702                        -->
+<!-- Date: 31 March 2026                          -->
+<!-- ============================================ -->
+<!-- This DTD validates the XML structure in our books.xml file -->
+<!-- It defines what elements are allowed and in what order -->
+<!-- ============================================ -->
+
+<!-- ============================================ -->
+<!-- 1. The ROOT ELEMENT                              -->
+<!-- ============================================ -->
+<!-- library is the root element of our XML document -->
+<!-- It must contain one or more category elements -->
+<!-- The + symbol means "one or more" - so at least one category is required -->
+<!ELEMENT library (category+)>
+
+<!-- ============================================ -->
+<!-- 2.The CATEGORY ELEMENT                          -->
+<!-- ============================================ -->
+<!-- Each category contains one or more book elements -->
+<!-- For example: Cooking, Fantasy, Romance, Horror, Children -->
+<!-- The + symbol again means each category must have at least one book -->
+<!ELEMENT category (book+)>
+
+<!-- Category has a required name attribute -->
+<!-- CDATA means it can contain any text data -->
+<!-- #REQUIRED means this attribute MUST be present for every category -->
+<!ATTLIST category
+    name CDATA #REQUIRED
+>
+
+<!-- ============================================ -->
+<!-- 3. The BOOK ELEMENT                              -->
+<!-- ============================================ -->
+<!-- Each book contains all book information in this exact order -->
+<!-- The order matters - XML must follow: ISBN, image, Title, etc. -->
+<!-- If elements are out of order, the DTD will show an error -->
+<!ELEMENT book (ISBN, image, Title, Author, Publisher, edition, date, price)>
+
+<!-- ============================================ -->
+<!-- 4. The SIMPLE TEXT ELEMENTS                      -->
+<!-- ============================================ -->
+<!-- These elements contain plain text only -->
+<!-- #PCDATA stands for "Parsed Character Data" - just regular text content -->
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+
+<!-- ============================================ -->
+<!-- 5. The AUTHOR ELEMENT (NESTED STRUCTURE)         -->
+<!-- ============================================ -->
+<!-- Author is a container element - it holds firstName and lastName -->
+<!-- This creates a nested structure inside each book -->
+<!-- Elements must appear in this order: firstName THEN lastName -->
+<!ELEMENT Author (firstName, lastName)>
+
+<!-- These are the individual author name components -->
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+
+<!-- ============================================ -->
+<!-- SUMMARY OF WHAT THIS DTD DOES:               -->
+<!-- ============================================ -->
+<!-- 1. Ensures every library has at least one category -->
+<!-- 2. Ensures every category has a name attribute -->
+<!-- 3. Ensures every category has at least one book -->
+<!-- 4. Ensures every book has all 8 elements in correct order -->
+<!-- 5. Ensures every book has an author with first and last name -->
+<!-- 6. Ensures all text elements contain plain text only -->
+<!-- ============================================ -->

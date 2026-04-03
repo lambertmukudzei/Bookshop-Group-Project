@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PageTurner Bookshop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #fdf6e3;
+            color: #3c3226;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #4a2c0a;
+            color: #fdf6e3;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 0.95em;
+            color: #f0d9b5;
+        }
+
+        nav {
+            background-color: #7a4419;
+            padding: 12px 40px;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fdf6e3;
+            text-decoration: none;
+            font-size: 1em;
+            font-family: Arial, sans-serif;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #4a2c0a;
+        }
+
+        nav a.active {
+            background-color: #4a2c0a;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-color: #c9956a;
+            text-align: center;
+            padding: 50px 40px;
+            border-bottom: 4px solid #4a2c0a;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            color: #fdf6e3;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #fdf6e3;
+            font-size: 1.1em;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            font-size: 1.6em;
+            color: #4a2c0a;
+            border-bottom: 2px solid #c9956a;
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        .about-text {
+            font-size: 1.05em;
+            background-color: #fff9ef;
+            padding: 20px;
+            border-left: 5px solid #c9956a;
+            border-radius: 4px;
+        }
+
+        .genres-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .genres-grid li {
+            background-color: #7a4419;
+            color: #fdf6e3;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff9ef;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        table thead {
+            background-color: #4a2c0a;
+            color: #fdf6e3;
+        }
+
+        table thead th {
+            padding: 12px 20px;
+            text-align: left;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            letter-spacing: 1px;
+        }
+
+        table tbody tr {
+            border-bottom: 1px solid #e8d5b5;
+        }
+
+        table tbody tr:nth-child(even) {
+            background-color: #fdf0dc;
+        }
+
+        table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+        table td {
+            padding: 10px 20px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+        }
+
+        table .closed {
+            color: #c0392b;
+            font-weight: bold;
+        }
+
+        table .open {
+            color: #27ae60;
+        }
+
+        .contact-box {
+            background-color: #fff9ef;
+            border: 1px solid #e8d5b5;
+            border-radius: 6px;
+            padding: 20px 30px;
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-box p {
+            margin-bottom: 8px;
+        }
+
+        .contact-box strong {
+            color: #4a2c0a;
+            display: inline-block;
+            width: 90px;
+        }
+
+        .contact-box a {
+            color: #7a4419;
+        }
+
+        footer {
+            background-color: #4a2c0a;
+            color: #f0d9b5;
+            text-align: center;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #c9956a;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>&#128218; PageTurner Bookshop</h1>
+            <p>Your neighbourhood home for books, ideas &amp; stories.</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="books.xml">Our Books</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Welcome to PageTurner!</h2>
+        <p>Independently owned. Passionately curated. Open every day for book lovers.</p>
+    </div>
+
+    <main>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p class="about-text">
+                PageTurner Bookshop has been a beloved part of the community since 2024.
+                Founded by lifelong readers Tawana, Sam and MK, our shop offers a carefully
+                hand-picked selection of new, classic, and rare titles across all genres.
+                We believe that every person deserves to find a book that changes their life —
+                and we are here to help you find yours. Whether you are searching for a gripping
+                thriller, an inspiring biography, or a colourful children's story, our friendly
+                and knowledgeable staff are always on hand to guide you.
+            </p>
+        </section>
+
+        <section id="genres">
+            <h2>Genres We Stock</h2>
+            <ul class="genres-grid">
+                <li>&#128366; Fiction</li>
+                <li>&#128366; Non-Fiction</li>
+                <li>&#128366; Science Fiction</li>
+                <li>&#128366; Mystery &amp; Thriller</li>
+                <li>&#128366; Biography</li>
+                <li>&#128366; History</li>
+                <li>&#128366; Children's Books</li>
+                <li>&#128366; Self-Help</li>
+                <li>&#128366; Travel</li>
+                <li>&#128366; Poetry</li>
+            </ul>
+        </section>
+
+        <section id="hours">
+            <h2>Opening Times</h2>
+            <table>
+                <thead>
+    <tr>
+        <th>Day</th>
+        <th>Opening Time</th>
+        <th>Closing Time</th>
+        <th>Status</th>
+        <th>Special Notes</th>    <!--Enhanced by mukudzei-->
+    </tr>
+</thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>09:00</td>
+                        <td>18:00</td>
+                        <td class="open">Open</td>
+                        <td>Page Turner's Quiet reading hours</td>    <!--added data for Special notes on Monday's-->
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>09:00</td>
+                        <td>18:00</td>
+                        <td class="open">Open</td>
+                        <td>Page Turner's Storytime for kids at 11am</td>    <!-- Special notes for Tuesdays -->
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>09:00</td>
+                        <td>18:00</td>
+                        <td class="open">Open</td>
+                        <td>Page turner's Reading practice for kids</td>    <!--Special notes for Wednesday's-->
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>09:00</td>
+                        <td>20:00</td>
+                        <td class="open">Open (Late)</td>
+                        <td>Spelling bee for kids at 10 am</td>    <!-- Special notes for Thursday's -->
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>09:00</td>
+                        <td>20:00</td>
+                        <td class="open">Open (Late)</td>
+                        <td>Last day to complete reading List for the week</td>    <!--Special notes for Friday's -->
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00</td>
+                        <td>18:00</td>
+                        <td class="open">Open</td>
+                        <td>Reading list is updated for the new week </td>    <!--Special notes for Saturday's-->
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>11:00</td>
+                        <td>16:00</td>
+                        <td class="open">Open</td>
+                        <td>Reading help for Kids at 12 noon</td>    <!--Special notes for Sunday's-->
+                        <!-- ========================================= -->
+                        <!-- HTML TABLE ENHANCED BY: [Mukudzei Kunyetu-Lambert]       -->
+                        <!-- Student ID: [M01061702]                     -->
+                        <!-- Added: Special Notes column and corressponding td tags to insert data            -->
+                        <!-- ========================================= -->
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact &amp; Address</h2>
+            <div class="contact-box">
+                <p><strong>Address:</strong> 42 Huntington Lane, Mauritius, EC1A 1BB</p>
+                <p><strong>Phone:</strong> +230 1234 5678</p>
+                <p><strong>Email:</strong> <a href="mailto:hello@pageturner.co.uk">hello@pageturner.co.mu</a></p>
+                <p><strong>Website:</strong> <a href="#">www.pageturner.co.mu</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Browse Our Books</h2>
+            <p>
+                View our full catalogue of available titles on our
+                <a href="books.xml" style="color:#7a4419; font-weight:bold;">Books Page &rarr;</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 PageTurner Bookshop. All rights reserved.</p>
+        <p><a href="index.html">Home</a> | <a href="books.xml">Our Books</a></p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* ============================================ */
+/* ENHANCED CSS FOR PAGETURNER BOOKSHOP         */
+/* CST1340 - Information in Organisations       */
+/* Student: Mukudzei Kunyetu-Lambert            */
+/* Student ID: M01061702                        */
+/* ============================================ */
+
+/* ===== 1. TABLE ENHANCEMENTS ===== */
+/* Styling for the Special Notes column I added */
+.hours-table td:last-child {
+    background-color: #fff5e6;
+    font-style: italic;
+    color: #8b5a2b;
+    border-left: 2px solid #c9956a;
+}
+
+/* Table row hover effect - changes color when mouse hovers */
+.hours-table tbody tr:hover {
+    background-color: #fff5e8 !important;
+}
+
+/* ===== 2. BACK TO TOP BUTTON ===== */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4a2c0a;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+}
+
+#back-to-top:hover {
+    background-color: #c9956a;
+}
+
+/* ===== 3. RESPONSIVE DESIGN - MOBILE FRIENDLY ===== */
+@media (max-width: 768px) {
+    /* Make table scroll horizontally on small screens */
+    .hours-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    /* Adjust hero section for mobile */
+    .hero {
+        padding: 30px 20px;
+    }
+    
+    .hero h2 {
+        font-size: 1.5em;
+    }
+    
+    /* Adjust genres for mobile */
+    .genres-grid li {
+        font-size: 0.85em;
+        padding: 5px 12px;
+    }
+    
+    /* Adjust main container */
+    main {
+        padding: 0 20px;
+    }
+}
+
+/* ===== 4. PRINT STYLES - FOR PRINTING THE PAGE ===== */
+@media print {
+    /* Hide navigation and decorative elements when printing */
+    nav, .hero, footer, #back-to-top {
+        display: none;
+    }
+    
+    /* Make sure table prints with borders */
+    .hours-table {
+        border: 2px solid black;
+    }
+    
+    .hours-table th {
+        background-color: #ddd;
+        border: 1px solid black;
+    }
+    
+    .hours-table td {
+        border: 1px solid #ccc;
+    }
+}
